@@ -5,7 +5,6 @@ export type SearchConfig = {
     fields: string[];
 }[];
 
-// What is this??
 export enum TagNames {
     title = "title",
     artist = "artist",

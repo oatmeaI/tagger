@@ -24,7 +24,6 @@ const GlobalConfig = loadConfig();
 ChoiceCache.load();
 ChangeCache.load();
 
-// TODO - don't replace "flip/edit" with "remix"
 // TODO - Release type (EP, Single, etc)
 // TODO - Genre
 // TODO - the casing should be configurable too
@@ -150,7 +149,7 @@ export async function enforce(
         throw new Error("No library root configured.");
     }
 
-    const { mp3s } = loadFiles(dir);
+    const mp3s = loadFiles(dir);
     const changes: ChangeInfo = {};
 
     let i = 0;
