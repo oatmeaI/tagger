@@ -6,7 +6,7 @@ const program = new Command();
 program
     .name("enforcer")
     .description("Keep your MP3 tags in line")
-    .argument('<dir>', 'The directory to scan')
+    .argument("<dir>", "The directory to scan")
     .option("-o, --out", "Write out changes file")
     .option("-c, --commit", "Commit changes from changes file")
     .option("-x, --noMove", "Don't move files")
