@@ -12,7 +12,7 @@ program
     .option("-x, --noMove", "Don't move files")
     .option("-q, --quiet", "Skip input")
     .option("--config", "Open the config file")
-    .option("--paths", "Open the config file")
+    .option("--paths", "Print the path to the config files etc.")
     .option("--emptyCache", "Empty the caches")
     .action(enforce);
 
